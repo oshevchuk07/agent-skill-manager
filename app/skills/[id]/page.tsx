@@ -6,7 +6,7 @@ type SkillPageProps = {
   };
 };
 
-export default async function SkillPage({ params }: SkillPageProps) {
+export default async function SkillItemPage({ params }: SkillPageProps) {
   const { id } = await params;
   const skill = SKILLS.find((skill) => skill.id === id);
 

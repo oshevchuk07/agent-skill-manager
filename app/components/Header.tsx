@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -5,16 +7,16 @@ export default function Header() {
       <div className="flex-1"></div>
       <ul className="menu menu-horizontal p-0">
         <li>
-          <a href="/skills">Skills</a>
+          <Link href="/skills">Skills</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <Link href="/login">Login</Link>
         </li>
         <li>
-          <a href="/register">Register</a>
+          <Link href="/register">Register</Link>
         </li>
       </ul>
     </div>
