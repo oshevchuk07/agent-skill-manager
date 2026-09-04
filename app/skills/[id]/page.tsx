@@ -1,3 +1,4 @@
+
 import { SKILLS } from "./skills";
 
 type SkillPageProps = {
