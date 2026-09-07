@@ -1,14 +1,15 @@
 
 import { SKILLS } from "./skills";
 
-type SkillPageProps = {
-  params: {
-    id: string;
-  };
-};
+// type SkillPageProps = {
+//   params: {
+//     id: string;
+//   };
+// };
 
-export default async function SkillItemPage({ params }: SkillPageProps) {
-  const { id } = await params;
+// export default async function SkillItemPage({ params }: SkillPageProps) {
+export default async function SkillItemPage(props: PageProps<'/skills/[id]'>) {
+  const { id } = await props.params;
   const skill = SKILLS.find((skill) => skill.id === id);
 
   if (!skill) {
